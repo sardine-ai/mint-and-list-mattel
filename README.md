@@ -8,8 +8,8 @@
   - The private key will automatically be added to the gitignore
 - Copy the account address and airdrop flow to it at: https://testnet-faucet.onflow.org/fund-account
 - Deploy The ExampleNFT contract with `flow accounts add-contract ./cadence/contracts/ExampleNFT.cdc -n testnet --signer testnet`
-- In you flow.json update the ExampleNFT object with your account address.
-  - for instance if you account address is `0x3e9bb56b5f645ec4` make the testnet key: `3e9bb56b5f645ec4`
+- In your flow.json update the ExampleNFT object with your account address.
+  - for instance if your account address is `0x3e9bb56b5f645ec4` make the testnet key: `3e9bb56b5f645ec4`
   ```
   "ExampleNFT": {
     "source": "./cadence/contracts/ExampleNFT.cdc",
@@ -34,7 +34,7 @@ Currently 1 FLOW = 1.0000000801500033 USDC on Flow Testnet
 ```
 curl --location 'https://api.sandbox.sardine.ai/v1/auth/client-tokens' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic YOUR_ATHORIZATION_CODE' \
+--header 'Authorization: Basic YOUR_ATHORIZATION_CODE' \ <---- FILL THIS OUT
 --data-raw '
 {
 	"referenceId": "test-0.9790479wedwedwed3007148",
@@ -68,13 +68,13 @@ curl --location 'https://api.sandbox.sardine.ai/v1/auth/client-tokens' \
         "name": "Hot wheels <> Sardine",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/HWNFT_S4_modular-grid_584x800b.jpg?v=1669157307",
         "network": "flow",
-        "recipientAddress": "THE_ACCOUNT_ADDRESS_YOU_CREATED",
+        "recipientAddress": "THE_ACCOUNT_ADDRESS_YOU_CREATED", <---- FILL THIS OUT
         "platform": "mattel",
         "type": "nft_secondary",
-        "blockchainNftId": "A_BLOCKCHAIN_NFT_ID",
-        "contractAddress": "A_CONTRACT_ADDRESS"
+        "blockchainNftId": "A_BLOCKCHAIN_NFT_ID", <---- FILL THIS OUT
+        "contractAddress": "A_CONTRACT_ADDRESS" <---- FILL THIS OUT
     }
 }'
 ```
-- Use the client token in the following url: `https://crypto.sandbox.sardine.ai/?client_token=c97af7bf-ad8d-412e-8845-dbfe8c0bbd76&show_features=true`
+- Use the client token in the following url: `https://crypto.sandbox.sardine.ai/?client_token=CLIENT_TOKEN&show_features=true`
 - YEEEEE
