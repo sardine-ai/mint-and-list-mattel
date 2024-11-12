@@ -1,0 +1,94 @@
+{
+	"contracts": {
+		"ExampleNFT": {
+			"source": "./cadence/contracts/ExampleNFT.cdc",
+			"aliases": {
+				"testing": "0000000000000008",
+				"testnet": "3e9bb56b5f645ec4"
+			}
+		},
+		"FlowToken": {
+			"source": "./cadence/contracts/FlowToken.cdc",
+			"aliases": {
+				"emulator": "0ae53cb6e3f42a79",
+				"mainnet": "1654653399040a61",
+				"testnet": "7e60df042a9c0868"
+			}
+		},
+		"FungibleToken": {
+			"source": "./cadence/contracts/FungibleToken.cdc",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testing": "0000000000000002",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"FungibleTokenMetadataViews": {
+			"source": "./cadence/contracts/FungibleTokenMetadataViews.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"MetadataViews": {
+			"source": "./cadence/contracts/MetadataViews.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testing": "0000000000000001",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"NFTStorefrontV2": {
+			"source": "./cadence/contracts/NFTStorefrontV2.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "4eb8a10cb9f87357",
+				"testing": "0000000000000007",
+				"testnet": "2d55b98eb200daef"
+			}
+		},
+		"NonFungibleToken": {
+			"source": "./cadence/contracts/NonFungibleToken.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testing": "0000000000000001",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"SwapFactory": {
+			"source": "./cadence/contracts/increment/SwapFactory.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "b063c16cac85dbd1",
+				"testnet": "6ca93d49c45a249f"
+			}
+		},
+		"ViewResolver": {
+			"source": "./cadence/contracts/ViewResolver.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"testnet": {
+			"address": "3e9bb56b5f645ec4",
+			"key": {
+				"type": "file",
+				"location": "testnet.pkey"
+			}
+		}
+	}
+}
