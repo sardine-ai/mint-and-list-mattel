@@ -81,14 +81,5 @@
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
 		"testing": "127.0.0.1:3569",
 		"testnet": "access.devnet.nodes.onflow.org:9000"
-	},
-	"accounts": {
-		"testnet": {
-			"address": "3e9bb56b5f645ec4",
-			"key": {
-				"type": "file",
-				"location": "testnet.pkey"
-			}
-		}
 	}
 }
